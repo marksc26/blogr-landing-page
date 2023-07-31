@@ -1,0 +1,12 @@
+body {
+  margin: 0 auto;
+  background-color: #fafaf9;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}

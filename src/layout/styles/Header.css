@@ -1,0 +1,315 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    margin-top: 40px;
+
+}
+
+.logo-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+    position: relative;
+
+}
+
+.menu p {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+
+.arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonsHeader {
+    display: flex;
+    flex-direction: row;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttonh {
+    padding: 10px 25px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 700ms ease;
+
+}
+
+.buttonh:hover {
+    background-color: white;
+    color: #f53c52;
+    border-radius: 20px;
+}
+
+.icons-menu {
+    display: none;
+}
+
+.list-header {
+    position: absolute;
+    top: 20px;
+    left: -5px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.534);
+    width: 120px;
+
+}
+
+.list-header2 {
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.534);
+    width: 120px;
+}
+
+.list-header3 {
+    position: absolute;
+    top: 20px;
+    left: 195px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.534);
+    width: 120px;
+}
+
+.list-header li,
+.list-header2 li,
+.list-header3 li {
+    list-style: none;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.list-header li:hover,
+.list-header2 li:hover,
+.list-header3 li:hover {
+    font-weight: 500;
+}
+
+.login2 {
+    display: none;
+}
+
+hr {
+    display: none;
+}
+
+@media(min-width: 1550px) {
+    .logo {
+        width: 150px;
+    }
+
+    .menu p {
+        font-size: 25px;
+    }
+
+    .buttonh {
+        font-size: 25px;
+    }
+
+    .list-header {
+        top: 45px;
+        width: 200px;
+    }
+
+    .list-header2 {
+        top: 45px;
+        width: 200px;
+        left: 135px;
+    }
+
+    .list-header3 {
+        top: 45px;
+        width: 200px;
+        left: 290px;
+    }
+
+    .list-header li,
+    .list-header2 li,
+    .list-header3 li {
+        font-size: 23px;
+
+    }
+
+}
+
+@media(max-width: 790px) {
+    .menu {
+        position: absolute;
+        top: -2000%;
+        left: 10%;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        color: black;
+        width: 80%;
+        height: 82vh;
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.445);
+        border-radius: 10px;
+        transition: all 600ms ease-in-out;
+    }
+
+    .show-menu {
+        position: absolute;
+        top: 50px;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        color: black;
+        width: 80%;
+        height: 82vh;
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.445);
+        border-radius: 10px;
+        transition: all 600ms ease-in-out;
+    }
+
+
+    .show-menu p {
+        font-family: 'Ubuntu', sans-serif;
+        display: flex;
+        gap: 5px;
+        cursor: pointer;
+        font-size: 21px;
+        margin: 0 0 15px;
+        margin-top: 25px;
+
+    }
+
+    .login2 {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        bottom: 20px;
+    }
+
+    .login2 button {
+        font-family: 'Ubuntu', sans-serif;
+        background-color: transparent;
+        font-size: 18px;
+        border: none;
+        padding: 10px 20px;
+        background: linear-gradient(90deg, rgba(255, 128, 102, 1) 0%, rgba(255, 87, 86, 1) 49%, rgba(255, 46, 72, 1) 100%);
+        color: white;
+        border-radius: 20px;
+
+    }
+
+
+
+    hr {
+        display: block;
+        border: 1px solid rgba(150, 150, 150, 0.192);
+        width: 80%;
+        position: absolute;
+        bottom: 135px;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .icons-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu p {
+        font-size: 21px;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+
+    .list-header,
+    .list-header2,
+    .list-header3 {
+        position: static;
+        text-align: center;
+        padding: 5px 15px;
+        background-color: #f0efef;
+        gap: 12px;
+        border-radius: 10px;
+        box-shadow: none;
+        width: 180px;
+        margin: 0;
+    }
+
+    .list-header li,
+    .list-header2 li,
+    .list-header3 li {
+        list-style: none;
+        color: #5a6569;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 19px;
+        cursor: pointer;
+    }
+
+    .bx-chevron-down,
+    .bx-chevron-up {
+        color: #f53c52;
+    }
+}
